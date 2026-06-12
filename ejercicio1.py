@@ -14,7 +14,7 @@ Construya el código que responda a los siguientes resultados """
 
 while True:
     try:
-        cant_alumnos = int(input("Ingrese la cantidad de alumnos a registrar"))
+        cant_alumnos = int(input("Ingrese la cantidad de alumnos a registrar :"))
         if cant_alumnos > 0 and cant_alumnos <= 30:
             break
         raise ValueError
@@ -27,9 +27,15 @@ lista_alumnos = []
 for i in range(cant_alumnos):
     print("--------- Datos del alumno nro ", i+1)
     alumno = {}
-    alumno["nombre"] = input("Ingrese el nombre del alumno")
-    alumno["direccion"] = input("Ingrese la direccion del alumno")
-    alumno["telefono"] = input("Ingrese el telefono del alumno")
+    alumno["nombre"] = input("Ingrese el nombre del alumno : ")
+    alumno["direccion"] = input("Ingrese la direccion del alumno : ")
+    alumno["telefono"] = input("Ingrese el telefono del alumno : ")
     lista_alumnos.append(alumno)
-    
-print(lista_alumnos)
+
+for alumno in lista_alumnos:
+    print("---------------------")
+    print(alumno["nombre"])
+    print("---------------------")
+    print(alumno["direccion"])
+    print("---------------------")
+    print(alumno["telefono"])
