@@ -21,3 +21,15 @@ while True:
     except:
         print("La cantidad no puede ser superior a 30 y debe ser un num entero positivo")
 
+
+lista_alumnos = []
+
+for i in range(cant_alumnos):
+    print("--------- Datos del alumno nro ", i+1)
+    alumno = {}
+    alumno["nombre"] = input("Ingrese el nombre del alumno")
+    alumno["direccion"] = input("Ingrese la direccion del alumno")
+    alumno["telefono"] = input("Ingrese el telefono del alumno")
+    lista_alumnos.append(alumno)
+    
+print(lista_alumnos)
